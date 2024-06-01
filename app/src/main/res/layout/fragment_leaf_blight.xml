@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeafBlight">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Strawberry leaf blight typically manifests as small, dark purple to brown spots on the upper surface of leaves"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="178dp"
+                android:layout_height="191dp"
+                android:layout_below="@+id/description"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="116dp"
+                android:src="@drawable/leaf_blight" />
+
+            <ExpandableListView
+                android:id="@+id/expandableMenu"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginTop="4dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:groupIndicator="@drawable/group_element_selector"/>
+
+
+            <!-- TODO: Update blank fragment layout -->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
